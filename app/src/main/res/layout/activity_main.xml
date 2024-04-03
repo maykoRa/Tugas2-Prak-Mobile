@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:text="TUGAS 2 PRAKTIKUM MOBILE"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/malibu">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addimage"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nekoprofile"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingBottom="20dp"
+                    android:background="@drawable/border_radius">
+
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="310dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama"
+                            android:fontFamily="sans-serif"/>
+
+                        <EditText
+                            android:id="@+id/input_username"
+                            android:layout_width="310dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Username"
+                            android:fontFamily="sans-serif"/>
+
+                        <Button
+                            android:id="@+id/submit_data"
+                            android:layout_width="310dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="50dp"
+                            android:text="SUBMIT"
+                            android:textColor="@color/malibu"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif"
+                            android:backgroundTint="@color/white"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
